@@ -1,0 +1,8 @@
+runtime:nodejs16 instance_class:F2 env_variables: BUCKET_NAME:"your-ng-app-bucket" 
+handlers:
+  -url:/ 
+  static_files:dist/recipebook/index.html 
+upload:
+  dist/recipebook/index.html
+  -url:/ 
+static_dir:dist/recipebook
